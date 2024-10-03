@@ -246,10 +246,3 @@ tmap_save(
 tmap_save(
   pseudacris_usa_map,
   filename = 'outputs/figures/pseudacris_usa_map.html')
-
-
-
-
-
-
-
