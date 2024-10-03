@@ -35,11 +35,11 @@ gbif_download |>
       my_species,
       '_key.rds'))
 
-read_rds(
-  paste0(
-  'data/raw/',
-  my_species,
-  '_key.rds'))
+# read_rds(
+#   paste0(
+#   'data/raw/',
+#   my_species,
+#   '_key.rds'))
 
 # check download processing -----------------------------------------------
 
@@ -54,7 +54,7 @@ data <-
 
 # data <- 
 #   occ_download_get(
-#     '0037423-240906103802322',
+#     '0037990-240906103802322',
 #     path = 'data/raw',
 #     overwrite = TRUE)
 

@@ -38,6 +38,13 @@ dir.create('data/processed/final')
 
 my_species <- 'Pseudacris_crucifer'
 
+gbif_metadata |> 
+  write_csv(
+    paste0(
+      'data/processed/final/',
+      my_species,
+      '_occs_clean_metadata.csv'))
+
 full_dataset |> 
   write_csv(
     paste0(

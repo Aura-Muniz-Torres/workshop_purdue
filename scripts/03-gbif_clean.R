@@ -18,6 +18,8 @@ gbif_raw <-
       'data/raw/',
       my_species,
       '_gbif_raw.csv'))
+
+#names(gbif_raw)
   
 gbif_pre_clean <- 
   gbif_raw |> 
@@ -102,7 +104,14 @@ derived_dataset_prep(
     'This data was filtered using CoordinateCleaner and scrubr',
   source_url = 
     'https://github.com/hzumbado/workshop_purdue/data/processed/gbif_clean.csv',
-  gbif_download_doi = '10.15468/dl.r9hsxv')
+  gbif_download_doi = '10.15468/dl.qejxhv')
+
+# read_rds(
+#   paste0(
+#   'data/raw/',
+#   my_species,
+#   '_key.rds'))
+
 
 # If output looks ok, run derived_dataset 
 
@@ -113,4 +122,4 @@ derived_dataset(
     'This data was filtered using CoordinateCleaner and scrubr',
   source_url = 
     'https://github.com/hzumbado/workshop_purdue/data/processed/gbif_clean.csv',
-  gbif_download_doi = '10.15468/dl.r9hsxv')
+  gbif_download_doi = '10.15468/dl.qejxhv')
